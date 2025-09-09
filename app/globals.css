@@ -14,7 +14,6 @@
     --color-correct-green: #09B200;
 
     /* Fontes / Tamanhos */
-    --font-lexend: 'Lexend', sans-serif;
     --font-size-display: 2.25rem;
     /* 36px */
     --font-size-lg: 1.25rem;
@@ -37,6 +36,10 @@
     --color-massive-black: var(--color-massive-black);
     --color-error-red: var(--color-error-red);
     --color-correct-green: var(--color-correct-green);
+
+
+    --font-lexend: 'Lexend', sans-serif;
+    --font-krona: 'Krona One', sans-serif;
 
     --font-display: var(--font-size-display);
     --font-lg: var(--font-size-lg);
