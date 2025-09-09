@@ -1,56 +1,53 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
- /* Variáveis do Design System */
+/* Variáveis do Design System */
 
 :root {
-  /* Cores */
-  --color-purple-black: #06000F;
-  --color-plasma-magenta: #FF00FB;
-  --color-nebula-purple: #3A007B;
-  --color-stellar-white: #FFFFFF;
-  --color-massive-black: #000000;
-  --color-error-red: #FF0000;
-  --color-correct-green: #09B200;
+    /* Cores */
+    --color-purple-black: #06000F;
+    --color-plasma-magenta: #FF00FB;
+    --color-nebula-purple: #3A007B;
+    --color-stellar-white: #FFFFFF;
+    --color-massive-black: #000000;
+    --color-error-red: #FF0000;
+    --color-correct-green: #09B200;
 
-  /* Fontes / Tamanhos */
-  --font-primary: 'Geist Sans', sans-serif;
-  --font-size-display: 2.25rem; /* 36px */
-  --font-size-lg: 1.25rem;      /* 20px */
-  --font-size-base: 1rem;       /* 16px */
-  --font-size-sm: 0.8125rem;    /* 13px */
-  --font-size-xs: 0.75rem;      /* 12px */
-  --font-size-tiny: 0.625rem;   /* 10px */
+    /* Fontes / Tamanhos */
+    --font-lexend: 'Lexend', sans-serif;
+    --font-size-display: 2.25rem;
+    /* 36px */
+    --font-size-lg: 1.25rem;
+    /* 20px */
+    --font-size-base: 1rem;
+    /* 16px */
+    --font-size-sm: 0.8125rem;
+    /* 13px */
+    --font-size-xs: 0.75rem;
+    /* 12px */
+    --font-size-tiny: 0.625rem;
+    /* 10px */
 }
 
+@theme {
+    --color-purple-black: var(--color-purple-black);
+    --color-plasma-magenta: var(--color-plasma-magenta);
+    --color-nebula-purple: var(--color-nebula-purple);
+    --color-stellar-white: var(--color-stellar-white);
+    --color-massive-black: var(--color-massive-black);
+    --color-error-red: var(--color-error-red);
+    --color-correct-green: var(--color-correct-green);
 
-/* Extensões Tailwind via Utilities */
-.text-display { font-size: var(--font-size-display); }
-.text-lg { font-size: var(--font-size-lg); }
-.text-base { font-size: var(--font-size-base); }
-.text-sm { font-size: var(--font-size-sm); }
-.text-xs { font-size: var(--font-size-xs); }
-.text-tiny { font-size: var(--font-size-tiny); }
+    --font-display: var(--font-size-display);
+    --font-lg: var(--font-size-lg);
+    --font-base: var(--font-size-base);
+    --font-sm: var(--font-size-sm);
+    --font-xs: var(--font-size-xs);
+    --font-tiny: var(--font-size-tiny);
+    --font-primary: var(--font-lexend);
 
-.bg-purple-black { background-color: var(--color-purple-black); }
-.bg-plasma-magenta { background-color: var(--color-plasma-magenta); }
-.bg-nebula-purple { background-color: var(--color-nebula-purple); }
-.bg-stellar-white { background-color: var(--color-stellar-white); }
-.bg-massive-black { background-color: var(--color-massive-black); }
-.bg-error-red { background-color: var(--color-error-red); }
-.bg-correct-green { background-color: var(--color-correct-green); }
-
-.text-purple-black { color: var(--color-purple-black); }
-.text-plasma-magenta { color: var(--color-plasma-magenta); }
-.text-nebula-purple { color: var(--color-nebula-purple); }
-.text-stellar-white { color: var(--color-stellar-white); }
-.text-massive-black { color: var(--color-massive-black); }
-.text-error-red { color: var(--color-error-red); }
-.text-correct-green { color: var(--color-correct-green); }
-
-.font-primary { font-family: var(--font-primary); }
-.font-regular { font-weight: 400; }
-.font-medium { font-weight: 500; }
-.font-bold { font-weight: 600; }
-.font-extrabold { font-weight: 700; }
-
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --font-weight-extrabold: 700;
+}

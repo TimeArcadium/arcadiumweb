@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 
-export const geistSans = Lexend({
+const lexend = Lexend({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-lexend",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased font-primary bg-gray-300`}
+        className={`antialiased ${lexend.variable} font-primary bg-gray-300`}
       >
         {children}
       </body>
