@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <header className="flex items-center justify-center gap-2">
       <Image src={logo} alt="logo arcad" width={148} height={49} />
-      <nav className="text-white font-krona font-bold flex space-x-5">
+      <nav className="text-white text-sm font-krona font-bold flex space-x-5">
         <Link href="#">LOGIN</Link>
         <Link href="#">CRIAR CONTA</Link>
         <Link href="#">JOGOS</Link>
