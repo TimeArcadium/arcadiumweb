@@ -6,7 +6,8 @@ export default function Home() {
     <>
       <Navbar />
     <div className="flex flex-col items-center justify-center min-h-screen py-2 gap-8 ">
-      <div className="flex flex-col items-center gap-4 bg-white text-black p-8 rounded-lg">
+
+      <div className="flex flex-col items-center gap-4 bg-white text-white p-8 rounded-lg">
 
         <Image src="/logoArcadiumWhite.jpg" alt="logo" width={150} height={150} />
         <h1 className="text-4xl">ArcadiumWeb</h1>
