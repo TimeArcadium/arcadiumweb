@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased ${lexend.variable} font-primary bg-gray-300`}
+        className={`antialiased ${lexend.variable} font-primary bg-black`}
       >
         {children}
       </body>
