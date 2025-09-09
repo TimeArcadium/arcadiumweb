@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Search() {
   return (
-    <form className="relative ml-3">
+    <form className="relative">
       <Input
         type="search"
         className="bg-white w-32 h-7 rounded-full px-4 py-2 pr-10 shadow-md outline-none"
