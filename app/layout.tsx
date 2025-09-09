@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Lexend, Krona_One } from "next/font/google";
 import "./globals.css";
+
+const kronaOne = Krona_One({
+  subsets: ["latin"],
+  variable: "--font-krona",
+  weight: ["400"]
+})
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -22,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased ${lexend.variable} font-primary bg-gray-300`}
+        className={`antialiased ${kronaOne.variable} ${lexend.variable} font-lexend bg-black`}
       >
         {children}
       </body>
